@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CSMSDataSet1" targetNamespace="http://tempuri.org/CSMSDataSet1.xsd" xmlns:mstns="http://tempuri.org/CSMSDataSet1.xsd" xmlns="http://tempuri.org/CSMSDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\CSMS.mdf;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="CSMS.mdf" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Out_custTableAdapter" GeneratorDataComponentClassName="Out_custTableAdapter" Name="Out_cust" UserDataComponentName="Out_custTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CSMS.mdf" DbObjectName="dbo.Out_cust" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT R_ID, In_Id, Cust_name, Cust_mo, Inword_date, Product, Total_qty, Rent, Ad_Payed, Total_amount, Outword_date FROM dbo.Out_cust</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="R_ID" DataSetColumn="R_ID" />
+              <Mapping SourceColumn="In_Id" DataSetColumn="In_Id" />
+              <Mapping SourceColumn="Cust_name" DataSetColumn="Cust_name" />
+              <Mapping SourceColumn="Cust_mo" DataSetColumn="Cust_mo" />
+              <Mapping SourceColumn="Inword_date" DataSetColumn="Inword_date" />
+              <Mapping SourceColumn="Product" DataSetColumn="Product" />
+              <Mapping SourceColumn="Total_qty" DataSetColumn="Total_qty" />
+              <Mapping SourceColumn="Rent" DataSetColumn="Rent" />
+              <Mapping SourceColumn="Ad_Payed" DataSetColumn="Ad_Payed" />
+              <Mapping SourceColumn="Total_amount" DataSetColumn="Total_amount" />
+              <Mapping SourceColumn="Outword_date" DataSetColumn="Outword_date" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CSMSDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CSMSDataSet1" msprop:Generator_UserDSName="CSMSDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Out_cust" msprop:Generator_TableClassName="Out_custDataTable" msprop:Generator_TableVarName="tableOut_cust" msprop:Generator_TablePropName="Out_cust" msprop:Generator_RowDeletingName="Out_custRowDeleting" msprop:Generator_RowChangingName="Out_custRowChanging" msprop:Generator_RowEvHandlerName="Out_custRowChangeEventHandler" msprop:Generator_RowDeletedName="Out_custRowDeleted" msprop:Generator_UserTableName="Out_cust" msprop:Generator_RowChangedName="Out_custRowChanged" msprop:Generator_RowEvArgName="Out_custRowChangeEvent" msprop:Generator_RowClassName="Out_custRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="R_ID" msprop:Generator_ColumnVarNameInTable="columnR_ID" msprop:Generator_ColumnPropNameInRow="R_ID" msprop:Generator_ColumnPropNameInTable="R_IDColumn" msprop:Generator_UserColumnName="R_ID" type="xs:int" />
+              <xs:element name="In_Id" msprop:Generator_ColumnVarNameInTable="columnIn_Id" msprop:Generator_ColumnPropNameInRow="In_Id" msprop:Generator_ColumnPropNameInTable="In_IdColumn" msprop:Generator_UserColumnName="In_Id" type="xs:int" />
+              <xs:element name="Cust_name" msprop:Generator_ColumnVarNameInTable="columnCust_name" msprop:Generator_ColumnPropNameInRow="Cust_name" msprop:Generator_ColumnPropNameInTable="Cust_nameColumn" msprop:Generator_UserColumnName="Cust_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cust_mo" msprop:Generator_ColumnVarNameInTable="columnCust_mo" msprop:Generator_ColumnPropNameInRow="Cust_mo" msprop:Generator_ColumnPropNameInTable="Cust_moColumn" msprop:Generator_UserColumnName="Cust_mo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Inword_date" msprop:Generator_ColumnVarNameInTable="columnInword_date" msprop:Generator_ColumnPropNameInRow="Inword_date" msprop:Generator_ColumnPropNameInTable="Inword_dateColumn" msprop:Generator_UserColumnName="Inword_date" type="xs:dateTime" />
+              <xs:element name="Product" msprop:Generator_ColumnVarNameInTable="columnProduct" msprop:Generator_ColumnPropNameInRow="Product" msprop:Generator_ColumnPropNameInTable="ProductColumn" msprop:Generator_UserColumnName="Product" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Total_qty" msprop:Generator_ColumnVarNameInTable="columnTotal_qty" msprop:Generator_ColumnPropNameInRow="Total_qty" msprop:Generator_ColumnPropNameInTable="Total_qtyColumn" msprop:Generator_UserColumnName="Total_qty" type="xs:int" />
+              <xs:element name="Rent" msprop:Generator_ColumnVarNameInTable="columnRent" msprop:Generator_ColumnPropNameInRow="Rent" msprop:Generator_ColumnPropNameInTable="RentColumn" msprop:Generator_UserColumnName="Rent" type="xs:int" />
+              <xs:element name="Ad_Payed" msprop:Generator_ColumnVarNameInTable="columnAd_Payed" msprop:Generator_ColumnPropNameInRow="Ad_Payed" msprop:Generator_ColumnPropNameInTable="Ad_PayedColumn" msprop:Generator_UserColumnName="Ad_Payed" type="xs:int" />
+              <xs:element name="Total_amount" msprop:Generator_ColumnVarNameInTable="columnTotal_amount" msprop:Generator_ColumnPropNameInRow="Total_amount" msprop:Generator_ColumnPropNameInTable="Total_amountColumn" msprop:Generator_UserColumnName="Total_amount" type="xs:double" />
+              <xs:element name="Outword_date" msprop:Generator_ColumnVarNameInTable="columnOutword_date" msprop:Generator_ColumnPropNameInRow="Outword_date" msprop:Generator_ColumnPropNameInTable="Outword_dateColumn" msprop:Generator_UserColumnName="Outword_date" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Out_cust" />
+      <xs:field xpath="mstns:In_Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
