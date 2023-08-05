@@ -14,12 +14,10 @@ Purpose:
 designed for arranging new incoming stock automatically and fast
 searching stored items into storage.
 
-Page 5 of 20
-
 OBJECTIVES:
-1 To maintain Inward and Outward registers.
-2 To arrange inward products automatically.
-
+1. To maintain Inward and Outward registers
+2. To arrange inward products automatically
+   
 MODULES:
 1. Admin(Cold Storage Owners):
 2. Employee(Cold Storage workers):
